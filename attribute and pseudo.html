@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar{
+           background-color: rgb(37, 36, 36);
+            height: 50px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar p{
+            font-size: 20px;
+            font-weight: 600;
+        }
+        a[target="_blank"]{
+            padding: 10px;
+        }
+        a:hover{
+            background-color: gray;
+            border-radius: 25px;
+        }
+        p{
+            padding-left: 20px;
+        }
+        .part1{
+           
+            height: 250px;
+            margin-top: 10px;
+            display: flex;
+        }
+        #part11{
+           
+           width: 75%;
+           height:250px;
+           padding-left: 20px;
+        
+          
+        }
+        
+        #part12{
+           
+            width: 30%;
+            height:250px;
+        }
+        div[id="part11"]{
+            background: linear-gradient(to top right,yellow 20%,red);
+        }
+        #part11 h2{
+            padding-left: 5px;
+            font-size: 30px;
+        }
+       div[id="part12"]{
+        background-image: radial-gradient(pink,lightblue);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+       }
+       #text{
+        padding-left: 20px;
+       }
+       #part12{
+        padding-left: 30px;
+       }
+       div[class="part21"]{
+        display: flex;
+        gap: 15px;
+       }
+       #box1{
+        border: 2px solid rgba(56, 52, 52, 0.795);
+        background-color: rgb(183, 178, 178);
+        width: 200px;
+        height: 200px;
+        position: relative;
+       }
+      div[id="part1position"]{
+        position: absolute;
+        top: 65px;left: 40px;
+        color: rgb(134, 128, 128);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:20px;
+        font-weight: bold;
+       }
+     div[id="part2position"]{
+       background-color: rgb(36, 35, 35);
+       width:70px;
+       color: white;
+       padding: 5px;
+       position: absolute;
+       top: 165px;
+       left: 10px;
+      }
+     input[type="text"]{
+        width: 100%;
+     }
+     input[type="email"]{
+        width: 100%;
+     }
+     input[type="submit"]{
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        background-color: rgb(250, 5, 5);
+     }
+     input[type="submit"]:hover{
+     background-color: rgb(67, 66, 66);
+     cursor: pointer;
+     }
+     div[class="footer"]{
+      background-color:black;
+      height: 40px;
+      color: #ffffff;
+      text-align: center;padding: 10px;
+      margin-top: 30px;
+     }
+     div[class="footer"]:hover{
+        background-color: rgb(67, 66, 66);
+        cursor: pointer;
+     }
+    #tre{
+        float: left;
+        margin-right: 10px;
+    }
+    #lorem{
+        margin-left: -16px;
+    }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div>
+            <p>My Logo</p>
+        </div>
+        <div>
+            <a target="_blank">Home</a>
+            <a target="_blank">About</a>
+            <a target="_blank">Services</a>
+            <a target="_blank">Contact</a>
+
+        </div>
+    </div>
+    <div class="part1">
+        <div id="part11">
+            <h2 id="text">Welcome to my website</h2>
+            <p id="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed do eiusmod tempor incididunt  ut labore et dolore magna aliqua.</p>Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi aliquip ex ea commodo consequant.
+            <img id="tre" src="https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg" alt="" width="100px" height="100px">
+        </div>
+        <div id="part12">
+           <h2>Sidebar</h2>
+           <a href="https://www.amazon.com/">link1</a>
+           <a href="https://www.amazon.com/">link2</a>
+           <a href="https://www.amazon.com/">link3</a>
+        </div>
+
+    </div>
+    <div class="part2">
+     <h2>Image Gallery</h2>
+     <div class="part21">
+        <div id="imgboxes">
+            <div id="box1">
+             <div id="part1position">
+                 <p>200&times;200</p>
+             </div>
+             <div id="part2position">
+               <caption>Caption 1</caption>
+             </div>
+            </div>
+          </div>
+          <div id="imgboxes">
+             <div id="box1">
+              <div id="part1position">
+                  <p>200&times;200</p>
+              </div>
+              <div id="part2position">
+                <caption>Caption 1</caption>
+              </div>
+             </div>
+           </div>
+           <div id="imgboxes">
+             <div id="box1">
+              <div id="part1position">
+                  <p>200&times;200</p>
+              </div>
+              <div id="part2position">
+                <caption>Caption 1</caption>
+              </div>
+             </div>
+           </div>
+     </div>
+    </div>
+    <div class="part3">
+        <h2>Sign up</h2>
+        <div>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name">
+            <br><br>
+            <label for="mail">Email:</label><br>
+            <input type="email" id="email">
+            <br><br>
+            <input type="checkbox" id="terms">
+            <label for="terms">Accept terms and conditions.</label><br><br>
+            <input type="submit">
+        </div>
+
+    </div>
+    <div class="footer">
+     <p>&copy;2024 My Website.All rights reserved.</p>
+    </div>
+</body>
+</html>
